@@ -1,0 +1,49 @@
+let
+    Source = (input1)=>
+let
+source = "",
+#"input_" = Text.Lower (input1)
+
+in
+if Text.Contains(#"input_","user removed the application") then "No" else
+if Text.Contains(input_,"remove") and Text.Contains(input_,"monitoring") then "No" else 
+if Text.Contains(input_,"removed") and Text.Contains(input_,"monitoring") then "No" else 
+if Text.Contains(input_,"install") or Text.Contains(input_,"modify") or Text.Contains(input_,"delete") or Text.Contains(input_,"replaced")
+or Text.Contains(input_,"modified") or Text.Contains(input_,"configure") or Text.Contains(input_,"maintanence") or Text.Contains(input_,"macd") or Text.Contains(input_,"maintnence") or Text.Contains(input_,"due to maintenace") then "Yes" else
+if Text.Contains(input_,"planned") and Text.Contains(input_,"change") then "Yes" else
+if Text.Contains(input_,"change") and Text.Contains(input_,"implemented") then "Yes" else
+if Text.Contains(input_,"leveraged change") then "Yes" else
+if Text.Contains(input_,"change") and Text.Contains(input_,"has been closed") then "Yes" else
+if Text.Contains(input_,"due to maintenance") or Text.Contains(input_,"scheduled maintenance") or Text.Contains(input_,"maintenance") then "Yes" else
+if Text.Contains(input_,"generated due to change") or Text.Contains(input_,"triggered due to change") then "Yes" else
+if Text.Contains(input_,"remove the devices") or Text.Contains(input_,"removed") then "Yes" else
+if Text.Contains(input_,"related to change") then "Yes" else
+if Text.Contains(input_,"decomissined") or Text.Contains(input_,"decommissioned") or Text.Contains(input_,"decommision") then "Yes" else
+if Text.Contains(input_,"there was a change") then "Yes" else
+if Text.Contains(input_,"cr#") and Text.Contains(input_,"affected") then "Yes" else
+if Text.Contains(input_,"change is completed") then "Yes" else
+if Text.Contains(input_,"relaed to change") or Text.Contains(input_,"related to the change") or Text.Contains(input_,"as per change") or Text.Contains(input_,"refer to change") or Text.Contains(input_,"emergency change") or 
+Text.Contains(input_,"due to change") or Text.Contains(input_,"chnage at") or Text.Contains(input_,"related change") or Text.Contains(input_,"ongoing chage") or Text.Contains(input_,"ongoing change") then "Yes" else
+if Text.Contains(input_,"patch upgrade") or Text.Contains(input_,"patch upgraded") or Text.Contains(input_,"patch") or Text.Contains(input_,"patching") then "Yes" else
+if Text.Contains(input_,"completed change") or Text.Contains(input_,"change complete") then "Yes" else
+if Text.Contains(input_,"change") and Text.Contains(input_,"closed") then "Yes" else
+if Text.Contains(input_,"cmr") then "Yes" else
+if Text.Contains(input_,"under") and Text.Contains(input_,"change") then "Yes" else
+if Text.Contains(input_,"due to") and Text.Contains(input_,"change") then "Yes" else
+if Text.Contains(input_,"done") and Text.Contains(input_,"change") then "Yes" else
+if Text.Contains(input_,"performed") and Text.Contains(input_,"change") then "Yes" else
+if Text.Contains(input_,"change") and Text.Contains(input_,"completed") then "Yes" else
+if Text.Contains(input_,"change") and Text.Contains(input_,"implemented") then "Yes" else
+if Text.Contains(input_,"reference") and Text.Contains(input_,"cm") then "Yes" else
+if Text.Contains(input_,"required change") or Text.Contains(input_,"required changes") then "Yes" else
+if Text.Contains(input_,"rolled back change")then "Yes" else
+if Text.Contains(input_,"solved with change")then "Yes" else
+if Text.Contains(input_,"changes has been completed")then "Yes" else
+if Text.Contains(input_,"r2:000046309371 - change number")then "Yes"
+
+
+
+else "No"
+
+in
+    Source
